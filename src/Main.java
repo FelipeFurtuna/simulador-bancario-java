@@ -8,16 +8,21 @@ void main() {
         escolha = sc.nextInt();
 
         if (escolha == 1) {
-            System.out.println("seu saldo atual é = " + saldo);
+            System.out.println("seu saldo atual é R$ " + saldo + " Reais");
         } else if (escolha == 2) {
             System.out.println("Digite o valor a ser depositado: ");
             double valor = sc.nextDouble();
             saldo = valor + saldo;
+        } else if (escolha == 3){
+            System.out.println("Digite o valor a ser Sacado: ");
+            double valor = sc.nextDouble();
+            saldo = saldo - valor;
+        } else if (escolha == 0) {
+            break;
         }
     }while (escolha!=0);
-
-    System.out.println("Finalizando!");
-
+    System.out.println("Obrigado por usar o meu banco!");
+    System.out.println("Finalizando....");
 
         //metodos abaixo
     } public static void MostrarMenu () {
