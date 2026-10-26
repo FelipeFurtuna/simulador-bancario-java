@@ -19,6 +19,9 @@ void main() {
             saldo = saldo - valor;
         } else if (escolha == 0) {
             break;
+        } else {
+            System.out.println("OPCAO INVALIDA!");
+            System.out.println("TENTE NOVAMENTE");
         }
     }while (escolha!=0);
     System.out.println("Obrigado por usar o meu banco!");
@@ -34,7 +37,5 @@ void main() {
         System.out.println("---------------");
         System.out.println("escolha uma opcao: ");
 
-    }  /*public static double Deposito (double valor){
-     double deposito = valor;
-     return deposito;*/
+    }
 
