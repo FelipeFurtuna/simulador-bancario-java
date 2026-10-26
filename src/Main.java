@@ -22,7 +22,12 @@ void main() {
         } else if (escolha == 3) {
             System.out.println("Digite o valor a ser Sacado: ");
             double valor = sc.nextDouble();
-            saldo = saldo - valor;
+            if (valor<=saldo) {
+                saldo = saldo - valor;
+            } else {
+                System.out.println("Não foi possivel sacar");
+                System.out.println("seu saldo atual é de R$" + saldo);
+            }
         } else if (escolha == 0) {
             break;
         } else {
