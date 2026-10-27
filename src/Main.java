@@ -12,13 +12,8 @@ void main() {
         } else if (escolha == 2) {
             System.out.println("Digite o valor a ser depositado: ");
             double valor = sc.nextDouble();
-            //inicio do if dentro do if de escolha, nao confundir
-            if (valor >= 0) {
-                saldo = valor + saldo;
-            } else {
-                System.out.println(" Não é possivel Depositar um valor NEGATIVO!");
-            }
-            //if dentro do if de escolha FIM
+            saldo = depositar(saldo, valor);
+
         } else if (escolha == 3) {
             System.out.println("Digite o valor a ser Sacado: ");
             double valor = sc.nextDouble();
@@ -50,5 +45,12 @@ public static void MostrarMenu() {
     System.out.println("---------------");
     System.out.println("escolha uma opcao: ");
 
+} public static double depositar (double saldo, double valor){
+    if (valor > 0) {
+        saldo = valor + saldo;
+    } else {
+        System.out.println(" Não é possivel Depositar um valor NEGATIVO ou ZERO!");
+    }
+    return saldo;
 }
 
