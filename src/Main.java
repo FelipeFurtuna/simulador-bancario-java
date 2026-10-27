@@ -8,7 +8,7 @@ void main() {
         escolha = sc.nextInt();
 
         if (escolha == 1) {
-            System.out.println("seu saldo atual é R$ " + saldo + " Reais");
+        consultarSaldo(saldo);
         } else if (escolha == 2) {
             System.out.println("Digite o valor a ser depositado: ");
             double valor = sc.nextDouble();
@@ -55,5 +55,7 @@ public static void MostrarMenu() {
         System.out.println("seu saldo atual é de R$" + saldo);
     }
     return saldo;
+} public static void consultarSaldo(double saldo){
+    System.out.println("seu saldo atual é R$ " + saldo + " Reais");
 }
 
