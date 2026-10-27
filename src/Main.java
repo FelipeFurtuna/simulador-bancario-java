@@ -17,11 +17,23 @@ void main() {
         consultarSaldo(saldo);
         } else if (escolha == 2) {
             System.out.println("Digite o valor a ser depositado: ");
+            if (sc.hasNextDouble()){
+            } else {
+                System.out.println("Voce nao digitou um numero!");
+                sc.next();
+                continue;
+            }
             double valor = sc.nextDouble();
             saldo = depositar(saldo, valor);
 
         } else if (escolha == 3) {
             System.out.println("Digite o valor a ser Sacado: ");
+            if (sc.hasNextDouble()){
+            } else {
+                System.out.println("Voce nao digitou um numero!");
+                sc.next();
+                continue;
+            }
             double valor = sc.nextDouble();
             saldo = sacar(saldo, valor);
         } else if (escolha == 0) {
