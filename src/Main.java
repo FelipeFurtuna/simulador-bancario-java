@@ -5,6 +5,12 @@ void main() {
     double saldo = 0;
     do {
         MostrarMenu();
+        if (sc.hasNextInt()){
+        } else {
+            System.out.println("Voce nao digitou um numero!");
+            sc.next();
+            continue;
+        }
         escolha = sc.nextInt();
 
         if (escolha == 1) {
