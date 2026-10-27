@@ -1,22 +1,38 @@
-Simulador Bancário em Java
+# Simulador Bancário em Java
 
-Projeto simples que desenvolvi para praticar Java e lógica de programação.
+Projeto desenvolvido em **Java** para praticar lógica de programação, métodos e estruturas de controle.
 
-Funcionalidades
-- Consultar saldo
-- Depositar dinheiro
-- Sacar dinheiro
-- Validar valores e entradas do usuário
+O programa funciona pelo terminal e permite realizar operações bancárias básicas.
 
-O que pratiquei
-- Métodos e parâmetros
-- `if/else` e `do while`
+## Funcionalidades
+
+- Consulta de saldo
+- Depósitos de valores positivos
+- Saques com verificação de saldo disponível
+- Validação de entradas do usuário
+- Menu interativo
+
+## Tecnologias utilizadas
+
+- **Java 25**
+- **IntelliJ IDEA**
+- **Git e GitHub**
+
+## Conceitos praticados
+
+- Métodos com parâmetros e retorno
+- `if`, `else if` e `else`
+- `do while`
 - `Scanner`
+- `hasNextInt()` e `hasNextDouble()`
 - `return`, `break` e `continue`
-- Git e GitHub
 
-Como executar
+## Como executar
 
-Abra o projeto no IntelliJ IDEA e execute o `Main.java` com Java 25.
+1. Baixe ou clone o repositório.
+2. Abra o projeto no IntelliJ IDEA.
+3. Execute o arquivo `Main.java` utilizando Java 25.
 
-Projeto desenvolvido durante meus estudos de Engenharia de Software.
+## Sobre o projeto
+
+Desenvolvido durante meus estudos em **Engenharia de Software**, com o objetivo de colocar em prática os fundamentos da linguagem Java.
