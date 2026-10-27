@@ -17,12 +17,7 @@ void main() {
         } else if (escolha == 3) {
             System.out.println("Digite o valor a ser Sacado: ");
             double valor = sc.nextDouble();
-            if (valor<=saldo && saldo!=0) {
-                saldo = saldo - valor;
-            } else {
-                System.out.println("Não foi possivel sacar");
-                System.out.println("seu saldo atual é de R$" + saldo);
-            }
+            saldo = sacar(saldo, valor);
         } else if (escolha == 0) {
             break;
         } else {
@@ -50,6 +45,14 @@ public static void MostrarMenu() {
         saldo = valor + saldo;
     } else {
         System.out.println(" Não é possivel Depositar um valor NEGATIVO ou ZERO!");
+    }
+    return saldo;
+} public static double sacar (double saldo, double valor){
+    if (valor <= saldo && valor > 0) {
+        saldo = saldo - valor;
+    } else {
+        System.out.println("Não foi possivel sacar");
+        System.out.println("seu saldo atual é de R$" + saldo);
     }
     return saldo;
 }
